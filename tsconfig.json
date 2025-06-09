@@ -1,15 +1,20 @@
 {
 	"compilerOptions": {
-		"jsx": "react-native", // ✅ JSX 사용 설정
-		"esModuleInterop": true, // ✅ default import 허용
+		"jsx": "react-native",
+		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
 		"strict": true,
 		"noEmit": true,
 		"target": "ESNext",
-		"moduleResolution": "node",
-		"module": "ESNext",
-		"skipLibCheck": true, // ✅ 충돌되는 타입 무시
-		"resolveJsonModule": true
+		"moduleResolution": "nodenext",
+		"module": "nodenext",
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		}
 	},
-	"exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+	"exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"],
+	"extends": "expo/tsconfig.base"
 }
