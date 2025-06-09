@@ -1,4 +1,4 @@
-import Main from '@/features/Main/Main';
+import Main from '../src/features/Main/Main';
 
 const App: React.FC = () => {
 	return <Main />;
