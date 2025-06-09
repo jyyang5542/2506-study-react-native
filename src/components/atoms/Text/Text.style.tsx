@@ -1,14 +1,11 @@
-import { StyleSheet } from 'react-native';
 import { Colors } from '@/styles/Base.style';
+import type { tTheme } from '@/types';
+import styled from 'styled-components/native';
 
-const Styles = StyleSheet.create({
-	text: {},
-	textLight: {
-		color: Colors.black
-	},
-	textDark: {
-		color: Colors.white
-	}
-});
-
-export default Styles;
+export const Text = styled.Text<{ theme?: tTheme }>`
+	${({ theme = 'light' }) => {
+		return `
+				color: ${theme === 'dark' ? Colors.black : Colors.white};
+			`;
+	}}
+`;

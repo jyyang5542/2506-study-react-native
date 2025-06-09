@@ -1,14 +1,13 @@
-import { StyleSheet } from 'react-native';
 import { Colors } from '@/styles/Base.style';
+import type { tTheme } from '@/types';
+import styled from 'styled-components/native';
 
-const Styles = StyleSheet.create({
-	container: { flex: 1 },
-	containerLight: {
-		backgroundColor: Colors.white
-	},
-	containerDark: {
-		backgroundColor: Colors.black
-	}
-});
+export const View = styled.View<{ theme?: tTheme }>`
+	flex: 1;
 
-export default Styles;
+	${({ theme = 'light' }) => {
+		return `
+				background-color: ${theme === 'dark' ? Colors.black : Colors.white};
+			`;
+	}}
+`;

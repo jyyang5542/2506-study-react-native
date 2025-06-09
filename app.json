@@ -1,32 +1,31 @@
 {
-  "expo": {
-    "name": "RNStudy",
-    "slug": "RNStudy",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "expo-router"
-    ]
-  }
+	"expo": {
+		"name": "RNStudy",
+		"slug": "RNStudy",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./src/assets/icons/icon.png",
+		"userInterfaceStyle": "light",
+		"jsEngine": "jsc",
+		"newArchEnabled": true,
+		"scheme": "RNStudy",
+		"splash": {
+			"image": "./src/assets/icons/splash-icon.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"ios": {
+			"supportsTablet": true
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./src/assets/icons/adaptive-icon.png"
+			},
+			"edgeToEdgeEnabled": true
+		},
+		"web": {
+			"favicon": "./src/assets/favicon.png"
+		},
+		"plugins": ["expo-router"]
+	}
 }

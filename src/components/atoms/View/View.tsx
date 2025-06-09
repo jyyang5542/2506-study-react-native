@@ -1,20 +1,20 @@
 // stores
 import useThemeStore from '@/stores/useThemeStore';
 
-// global components
-import { View as ReactView } from 'react-native';
+// types
+import type { tChildren } from '@/types';
 
 // styles
-import Styles from './View.style';
+import { View as Atom } from './View.style';
 
 interface Props {
-	children: React.ReactNode;
+	children?: tChildren;
 }
 
 const View: React.FC<Props> = ({ children }) => {
 	const { theme } = useThemeStore();
 
-	return <ReactView style={[Styles.container, theme === 'light' ? Styles.containerLight : Styles.containerDark]}>{children}</ReactView>;
+	return <Atom theme={theme}>{children}</Atom>;
 };
 
 export default View;

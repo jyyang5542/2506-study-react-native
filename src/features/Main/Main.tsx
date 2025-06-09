@@ -2,12 +2,11 @@
 import useThemeStore from '@/stores/useThemeStore';
 
 // global components
-import { Text, View } from '@/components/atoms';
-import { StatusBar } from 'expo-status-bar';
-import { Pressable } from 'react-native';
+import Text from '@/components/atoms/Text/Text';
+import View from '@/components/atoms/View/View';
 
 // styles
-import Styles from './Main.style';
+import { ToggleThemeBtn } from './Main.style';
 
 interface Props {}
 
@@ -16,11 +15,10 @@ const Main: React.FC<Props> = () => {
 
 	return (
 		<View>
-			<Pressable style={Styles.toggleThemeBtn} onPress={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+			<ToggleThemeBtn onPress={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
 				<Text>Current Theme: {theme}</Text>
-			</Pressable>
+			</ToggleThemeBtn>
 			<Text>Sample Text</Text>
-			<StatusBar style='auto' />
 		</View>
 	);
 };

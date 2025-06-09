@@ -2,7 +2,7 @@
 	"name": "rnstudy",
 	"license": "0BSD",
 	"version": "1.0.0",
-	"main": "index.ts",
+	"main": "App.tsx",
 	"scripts": {
 		"start": "expo start",
 		"android": "expo start --android",
@@ -18,18 +18,22 @@
 		"react": "19.0.0",
 		"react-dom": "19.0.0",
 		"react-native": "0.79.3",
+		"react-native-safe-area-context": "^5.4.0",
 		"react-native-web": "^0.20.0",
+		"styled-components": "^5.3.11",
 		"zustand": "^5.0.5"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.25.2",
 		"@types/react": "~19.0.10",
+		"@types/styled-components-react-native": "^5.2.5",
 		"babel-loader": "^10.0.0",
+		"babel-plugin-module-resolver": "^5.0.2",
 		"eslint": "^9.28.0",
 		"husky": "^8.0.0",
 		"jiti": "^2.4.2",
 		"lint-staged": "^16.1.0",
-		"react-native-svg": "^13.14.0",
+		"react-native-svg": "^15.11.2",
 		"typescript": "~5.8.3"
 	},
 	"lint-staged": {

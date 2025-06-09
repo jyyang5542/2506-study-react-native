@@ -1,7 +1,3 @@
-import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 
-const Styles = StyleSheet.create({
-	toggleThemeBtn: {}
-});
-
-export default Styles;
+export const ToggleThemeBtn = styled.Pressable``;
